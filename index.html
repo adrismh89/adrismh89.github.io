@@ -82,8 +82,9 @@
   };
   
   function getFBData(){
-	FB.api('/me/posts.limit(200){message}',function(data){
-				alert(data.id);
+	FB.api('/me',{fields:'last_name'},function(data){
+				///me/posts.limit(200){message}
+				alert(data);
 	})
   };
   function logout() {
