@@ -83,7 +83,7 @@
   
   function getFBData(){
 	FB.api('/me/posts.limit(200){message}',function(data){
-				alert(data);
+				alert(data.id);
 	})
   };
   function logout() {
