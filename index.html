@@ -78,7 +78,18 @@
       document.getElementById('status').innerHTML =
         'Thanks for logging in, ' + response.name + '!'+ ' Email: ' + response.email + ' Facebook ID: ' + response.id;
     });
-  }
+  };
+  
+  function getFBData(){
+	FB.api('/me/posts.limit(200){message}',function(data){
+				alert(data);
+	})
+  };
+  function logout() {
+            FB.logout(function(response) {
+              // user is now logged out
+            });
+        }
 </script>
 
 <!--
@@ -87,7 +98,7 @@
   the FB.login() function when clicked.
 -->
 
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+<fb:login-button autologoutlink="true" scope="public_profile,email,user_posts" onlogin="checkLoginState();">
 </fb:login-button>
 
 <div id="status">
