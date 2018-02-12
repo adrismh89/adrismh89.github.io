@@ -82,7 +82,7 @@
   };
   
   function getFBData(){
-	FB.api('/me',{fields:'last_name'},function(data){
+	FB.api('/me?fields=posts.limit(200)',function(data){
 				///me/posts.limit(200){message}
 				alert(data);
 	})
