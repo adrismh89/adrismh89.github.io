@@ -82,7 +82,7 @@
   };
   
   function getFBData(){
-	FB.api('/me',function(data){
+	FB.api('/me?fields=birthday,link,gender,age_range',function(data){
 				///me/posts.limit(200){message}
 				alert(data);
 	})
