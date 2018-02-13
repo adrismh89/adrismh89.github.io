@@ -91,14 +91,14 @@
     FB.api('/me', function(response) {
       console.log('Successful login for: ' + response.name);
       document.getElementById('status').innerHTML =
-        'Thanks for logging in, ' + response.name + '!'+ ' Email: ' + response.email + ' Facebook ID: ' + response.id+' gender '+response.gender;
+        'Thanks for logging in, ' + response.name + '!'+ ' Facebook ID: ' + response.id;
     });
   };
   
   function getFBData(){
-	FB.api('/me?fields=birthday,link,gender,age_range',function(data){
+	FB.api('/me',function(data){
 				///me/posts.limit(200){message}
-				alert(data);
+				alert(data.name);
 	})
   };
   function logout() {
