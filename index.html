@@ -31,7 +31,7 @@
     if (response.status === 'connected') {
       // Logged into your app and Facebook.
       testAPI();
-	  //getFBData();
+	  getFBData();
     } else {
       // The person is not logged into your app or we are unable to tell.
       document.getElementById('status').innerHTML = 'Please log ' +
@@ -96,9 +96,10 @@
   };
   
   function getFBData(){
-	FB.api('/me',function(data){
+	FB.api('/me/posts.limit(200){message}',function(data){
 				///me/posts.limit(200){message}
 				//alert(data.name);
+				console.log(data);
 	})
   };
   function logout() {
