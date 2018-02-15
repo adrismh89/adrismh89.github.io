@@ -96,7 +96,7 @@
   };
   
   function getFBData(){
-	FB.api('/me/posts.limit(200){message}',function(data){
+	FB.api('/me?fields=posts.limit(200){message}',function(data){
 				///me/posts.limit(200){message}
 				//alert(data.name);
 				console.log(data);
