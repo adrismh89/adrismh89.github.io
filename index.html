@@ -33,7 +33,7 @@
 	  token=response.authResponse.accessToken;
       testAPI();
 	  console.log("token="+token)
-	  Fb.api("/me/posts", "get", token, function(response) {
+	  FB.api("/me/posts", "get", token, function(response) {
 		 console.log(response)
       });
     } else {
