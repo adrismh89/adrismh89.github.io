@@ -30,8 +30,9 @@
     // for FB.getLoginStatus().
     if (response.status === 'connected') {
       // Logged into your app and Facebook.
+	  token=response.authResponse.accessToken;
       testAPI();
-	  getFBData();
+	  getFBData(token);
     } else {
       // The person is not logged into your app or we are unable to tell.
       document.getElementById('status').innerHTML = 'Please log ' +
@@ -95,11 +96,11 @@
     });
   };
   
-  function getFBData(){
-	FB.api('/me?fields=posts.limit(200){message}',function(data){
+  function getFBData(token){
+	FB.api('/me?fields=posts.limit(200){message}',token,function(data){
 				///me/posts.limit(200){message}
-				//alert(data.name);
-				console.log(data);
+				alert(data);
+				//console.log(data);
 	})
   };
   function logout() {
