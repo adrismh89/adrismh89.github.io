@@ -33,7 +33,7 @@
 	  token=response.authResponse.accessToken;
       testAPI();
 	  console.log("token="+token)
-	  FB.api('/me', 'get', { access_token: token, fields: 'id,name,gender' }, function(response) {
+	  FB.api('/me/feed', 'get', { access_token: token, fields: 'message&limit=200' }, function(response) {
 		 console.log(response)
       });
     } else {
