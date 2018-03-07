@@ -1,0 +1,435 @@
+<html>
+<head>
+<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css">
+<style type="text/css">
+
+.label_button
+{
+	border:1px solid #BDB76B;
+	background-color:#FFE4B5;
+	padding:4px;
+	display:block;
+	width:40px;
+}
+
+.label_button:hover
+{
+	background-color:#FFC495;
+}
+
+td, th, div
+{
+	font-family: "Arvo", serif;
+}
+</style>
+<script type="text/javascript">
+var base = new Date();
+
+function itemclicked(item)
+{
+	var elapse = new Date() - base;
+	base = new Date();
+	
+	document.getElementById(item+"_E").value = parseInt(document.getElementById(item+"_E").value) + elapse;
+}
+
+window.onblur = function()
+{
+	document.getElementById("onblurs").value = parseInt(document.getElementById("onblurs").value) + 1;
+}
+
+function checksubmit()
+{
+	
+}
+</script>
+</head>
+<body>
+
+<form method="POST" action="2.php">
+
+	<input name="unqid" value="5aa044a3cc722749864263" type="hidden">
+	<input name="seconds" value="1520452783" type="hidden">
+	
+	<table style="margin:0 auto;max-width:650px;" cellspacing="0" cellpadding="2px">
+
+	<tbody><tr>
+	<td></td>
+	<td><small>Disagree</small></td>
+	<td></td>
+	<td><small>Neutral</small></td>
+	<td></td>
+	<td><small>Agree</small></td>
+	</tr>
+
+					
+	<tr style="background-color:#E0E0BC"><td>I am the life of the party.</td>
+	<td align="center"><input name="EXT1_E" id="EXT1_E" value="2284944" type="hidden"><input name="EXT1" value="1" onclick="itemclicked('EXT1');" type="radio"></td>
+	<td align="center"><input name="EXT1" value="2" onclick="itemclicked('EXT1');" type="radio"></td>
+	<td align="center"><input name="EXT1" value="3" onclick="itemclicked('EXT1');" type="radio"></td>
+	<td align="center"><input name="EXT1" value="4" onclick="itemclicked('EXT1');" type="radio"></td>
+	<td align="center"><input name="EXT1" value="5" onclick="itemclicked('EXT1');" type="radio"></td>
+	</tr>
+	<tr><td>I feel little concern for others.</td>
+	<td align="center"><input name="AGR1_E" id="AGR1_E" value="721290" type="hidden"><input name="AGR1" value="1" onclick="itemclicked('AGR1');" type="radio"></td>
+	<td align="center"><input name="AGR1" value="2" onclick="itemclicked('AGR1');" type="radio"></td>
+	<td align="center"><input name="AGR1" value="3" onclick="itemclicked('AGR1');" type="radio"></td>
+	<td align="center"><input name="AGR1" value="4" onclick="itemclicked('AGR1');" type="radio"></td>
+	<td align="center"><input name="AGR1" value="5" onclick="itemclicked('AGR1');" type="radio"></td>
+	</tr>
+	<tr style="background-color:#E0E0BC"><td>I am always prepared.</td>
+	<td align="center"><input name="CSN1_E" id="CSN1_E" value="695" type="hidden"><input name="CSN1" value="1" onclick="itemclicked('CSN1');" type="radio"></td>
+	<td align="center"><input name="CSN1" value="2" onclick="itemclicked('CSN1');" type="radio"></td>
+	<td align="center"><input name="CSN1" value="3" onclick="itemclicked('CSN1');" type="radio"></td>
+	<td align="center"><input name="CSN1" value="4" onclick="itemclicked('CSN1');" type="radio"></td>
+	<td align="center"><input name="CSN1" value="5" onclick="itemclicked('CSN1');" type="radio"></td>
+	</tr>
+	<tr><td>I get stressed out easily.</td>
+	<td align="center"><input name="EST1_E" id="EST1_E" value="496" type="hidden"><input name="EST1" value="1" onclick="itemclicked('EST1');" type="radio"></td>
+	<td align="center"><input name="EST1" value="2" onclick="itemclicked('EST1');" type="radio"></td>
+	<td align="center"><input name="EST1" value="3" onclick="itemclicked('EST1');" type="radio"></td>
+	<td align="center"><input name="EST1" value="4" onclick="itemclicked('EST1');" type="radio"></td>
+	<td align="center"><input name="EST1" value="5" onclick="itemclicked('EST1');" type="radio"></td>
+	</tr>
+	<tr style="background-color:#E0E0BC"><td>I have a rich vocabulary.</td>
+	<td align="center"><input name="OPN1_E" id="OPN1_E" value="750" type="hidden"><input name="OPN1" value="1" onclick="itemclicked('OPN1');" type="radio"></td>
+	<td align="center"><input name="OPN1" value="2" onclick="itemclicked('OPN1');" type="radio"></td>
+	<td align="center"><input name="OPN1" value="3" onclick="itemclicked('OPN1');" type="radio"></td>
+	<td align="center"><input name="OPN1" value="4" onclick="itemclicked('OPN1');" type="radio"></td>
+	<td align="center"><input name="OPN1" value="5" onclick="itemclicked('OPN1');" type="radio"></td>
+	</tr>
+	<tr><td>I don't talk a lot.</td>
+	<td align="center"><input name="EXT2_E" id="EXT2_E" value="763" type="hidden"><input name="EXT2" value="1" onclick="itemclicked('EXT2');" type="radio"></td>
+	<td align="center"><input name="EXT2" value="2" onclick="itemclicked('EXT2');" type="radio"></td>
+	<td align="center"><input name="EXT2" value="3" onclick="itemclicked('EXT2');" type="radio"></td>
+	<td align="center"><input name="EXT2" value="4" onclick="itemclicked('EXT2');" type="radio"></td>
+	<td align="center"><input name="EXT2" value="5" onclick="itemclicked('EXT2');" type="radio"></td>
+	</tr>
+	<tr style="background-color:#E0E0BC"><td>I am interested in people.</td>
+	<td align="center"><input name="AGR2_E" id="AGR2_E" value="0" type="hidden"><input name="AGR2" value="1" onclick="itemclicked('AGR2');" type="radio"></td>
+	<td align="center"><input name="AGR2" value="2" onclick="itemclicked('AGR2');" type="radio"></td>
+	<td align="center"><input name="AGR2" value="3" onclick="itemclicked('AGR2');" type="radio"></td>
+	<td align="center"><input name="AGR2" value="4" onclick="itemclicked('AGR2');" type="radio"></td>
+	<td align="center"><input name="AGR2" value="5" onclick="itemclicked('AGR2');" type="radio"></td>
+	</tr>
+	<tr><td>I leave my belongings around.</td>
+	<td align="center"><input name="CSN2_E" id="CSN2_E" value="0" type="hidden"><input name="CSN2" value="1" onclick="itemclicked('CSN2');" type="radio"></td>
+	<td align="center"><input name="CSN2" value="2" onclick="itemclicked('CSN2');" type="radio"></td>
+	<td align="center"><input name="CSN2" value="3" onclick="itemclicked('CSN2');" type="radio"></td>
+	<td align="center"><input name="CSN2" value="4" onclick="itemclicked('CSN2');" type="radio"></td>
+	<td align="center"><input name="CSN2" value="5" onclick="itemclicked('CSN2');" type="radio"></td>
+	</tr>
+	<tr style="background-color:#E0E0BC"><td>I am relaxed most of the time.</td>
+	<td align="center"><input name="EST2_E" id="EST2_E" value="0" type="hidden"><input name="EST2" value="1" onclick="itemclicked('EST2');" type="radio"></td>
+	<td align="center"><input name="EST2" value="2" onclick="itemclicked('EST2');" type="radio"></td>
+	<td align="center"><input name="EST2" value="3" onclick="itemclicked('EST2');" type="radio"></td>
+	<td align="center"><input name="EST2" value="4" onclick="itemclicked('EST2');" type="radio"></td>
+	<td align="center"><input name="EST2" value="5" onclick="itemclicked('EST2');" type="radio"></td>
+	</tr>
+	<tr><td>I have difficulty understanding abstract ideas.</td>
+	<td align="center"><input name="OPN2_E" id="OPN2_E" value="0" type="hidden"><input name="OPN2" value="1" onclick="itemclicked('OPN2');" type="radio"></td>
+	<td align="center"><input name="OPN2" value="2" onclick="itemclicked('OPN2');" type="radio"></td>
+	<td align="center"><input name="OPN2" value="3" onclick="itemclicked('OPN2');" type="radio"></td>
+	<td align="center"><input name="OPN2" value="4" onclick="itemclicked('OPN2');" type="radio"></td>
+	<td align="center"><input name="OPN2" value="5" onclick="itemclicked('OPN2');" type="radio"></td>
+	</tr>
+	<tr style="background-color:#E0E0BC"><td>I feel comfortable around people.</td>
+	<td align="center"><input name="EXT3_E" id="EXT3_E" value="0" type="hidden"><input name="EXT3" value="1" onclick="itemclicked('EXT3');" type="radio"></td>
+	<td align="center"><input name="EXT3" value="2" onclick="itemclicked('EXT3');" type="radio"></td>
+	<td align="center"><input name="EXT3" value="3" onclick="itemclicked('EXT3');" type="radio"></td>
+	<td align="center"><input name="EXT3" value="4" onclick="itemclicked('EXT3');" type="radio"></td>
+	<td align="center"><input name="EXT3" value="5" onclick="itemclicked('EXT3');" type="radio"></td>
+	</tr>
+	<tr><td>I insult people.</td>
+	<td align="center"><input name="AGR3_E" id="AGR3_E" value="0" type="hidden"><input name="AGR3" value="1" onclick="itemclicked('AGR3');" type="radio"></td>
+	<td align="center"><input name="AGR3" value="2" onclick="itemclicked('AGR3');" type="radio"></td>
+	<td align="center"><input name="AGR3" value="3" onclick="itemclicked('AGR3');" type="radio"></td>
+	<td align="center"><input name="AGR3" value="4" onclick="itemclicked('AGR3');" type="radio"></td>
+	<td align="center"><input name="AGR3" value="5" onclick="itemclicked('AGR3');" type="radio"></td>
+	</tr>
+	<tr style="background-color:#E0E0BC"><td>I pay attention to details.</td>
+	<td align="center"><input name="CSN3_E" id="CSN3_E" value="0" type="hidden"><input name="CSN3" value="1" onclick="itemclicked('CSN3');" type="radio"></td>
+	<td align="center"><input name="CSN3" value="2" onclick="itemclicked('CSN3');" type="radio"></td>
+	<td align="center"><input name="CSN3" value="3" onclick="itemclicked('CSN3');" type="radio"></td>
+	<td align="center"><input name="CSN3" value="4" onclick="itemclicked('CSN3');" type="radio"></td>
+	<td align="center"><input name="CSN3" value="5" onclick="itemclicked('CSN3');" type="radio"></td>
+	</tr>
+	<tr><td>I worry about things.</td>
+	<td align="center"><input name="EST3_E" id="EST3_E" value="0" type="hidden"><input name="EST3" value="1" onclick="itemclicked('EST3');" type="radio"></td>
+	<td align="center"><input name="EST3" value="2" onclick="itemclicked('EST3');" type="radio"></td>
+	<td align="center"><input name="EST3" value="3" onclick="itemclicked('EST3');" type="radio"></td>
+	<td align="center"><input name="EST3" value="4" onclick="itemclicked('EST3');" type="radio"></td>
+	<td align="center"><input name="EST3" value="5" onclick="itemclicked('EST3');" type="radio"></td>
+	</tr>
+	<tr style="background-color:#E0E0BC"><td>I have a vivid imagination.</td>
+	<td align="center"><input name="OPN3_E" id="OPN3_E" value="0" type="hidden"><input name="OPN3" value="1" onclick="itemclicked('OPN3');" type="radio"></td>
+	<td align="center"><input name="OPN3" value="2" onclick="itemclicked('OPN3');" type="radio"></td>
+	<td align="center"><input name="OPN3" value="3" onclick="itemclicked('OPN3');" type="radio"></td>
+	<td align="center"><input name="OPN3" value="4" onclick="itemclicked('OPN3');" type="radio"></td>
+	<td align="center"><input name="OPN3" value="5" onclick="itemclicked('OPN3');" type="radio"></td>
+	</tr>
+	<tr><td>I keep in the background.</td>
+	<td align="center"><input name="EXT4_E" id="EXT4_E" value="0" type="hidden"><input name="EXT4" value="1" onclick="itemclicked('EXT4');" type="radio"></td>
+	<td align="center"><input name="EXT4" value="2" onclick="itemclicked('EXT4');" type="radio"></td>
+	<td align="center"><input name="EXT4" value="3" onclick="itemclicked('EXT4');" type="radio"></td>
+	<td align="center"><input name="EXT4" value="4" onclick="itemclicked('EXT4');" type="radio"></td>
+	<td align="center"><input name="EXT4" value="5" onclick="itemclicked('EXT4');" type="radio"></td>
+	</tr>
+	<tr style="background-color:#E0E0BC"><td>I sympathize with others' feelings.</td>
+	<td align="center"><input name="AGR4_E" id="AGR4_E" value="0" type="hidden"><input name="AGR4" value="1" onclick="itemclicked('AGR4');" type="radio"></td>
+	<td align="center"><input name="AGR4" value="2" onclick="itemclicked('AGR4');" type="radio"></td>
+	<td align="center"><input name="AGR4" value="3" onclick="itemclicked('AGR4');" type="radio"></td>
+	<td align="center"><input name="AGR4" value="4" onclick="itemclicked('AGR4');" type="radio"></td>
+	<td align="center"><input name="AGR4" value="5" onclick="itemclicked('AGR4');" type="radio"></td>
+	</tr>
+	<tr><td>I make a mess of things.</td>
+	<td align="center"><input name="CSN4_E" id="CSN4_E" value="0" type="hidden"><input name="CSN4" value="1" onclick="itemclicked('CSN4');" type="radio"></td>
+	<td align="center"><input name="CSN4" value="2" onclick="itemclicked('CSN4');" type="radio"></td>
+	<td align="center"><input name="CSN4" value="3" onclick="itemclicked('CSN4');" type="radio"></td>
+	<td align="center"><input name="CSN4" value="4" onclick="itemclicked('CSN4');" type="radio"></td>
+	<td align="center"><input name="CSN4" value="5" onclick="itemclicked('CSN4');" type="radio"></td>
+	</tr>
+	<tr style="background-color:#E0E0BC"><td>I seldom feel blue.</td>
+	<td align="center"><input name="EST4_E" id="EST4_E" value="0" type="hidden"><input name="EST4" value="1" onclick="itemclicked('EST4');" type="radio"></td>
+	<td align="center"><input name="EST4" value="2" onclick="itemclicked('EST4');" type="radio"></td>
+	<td align="center"><input name="EST4" value="3" onclick="itemclicked('EST4');" type="radio"></td>
+	<td align="center"><input name="EST4" value="4" onclick="itemclicked('EST4');" type="radio"></td>
+	<td align="center"><input name="EST4" value="5" onclick="itemclicked('EST4');" type="radio"></td>
+	</tr>
+	<tr><td>I am not interested in abstract ideas.</td>
+	<td align="center"><input name="OPN4_E" id="OPN4_E" value="0" type="hidden"><input name="OPN4" value="1" onclick="itemclicked('OPN4');" type="radio"></td>
+	<td align="center"><input name="OPN4" value="2" onclick="itemclicked('OPN4');" type="radio"></td>
+	<td align="center"><input name="OPN4" value="3" onclick="itemclicked('OPN4');" type="radio"></td>
+	<td align="center"><input name="OPN4" value="4" onclick="itemclicked('OPN4');" type="radio"></td>
+	<td align="center"><input name="OPN4" value="5" onclick="itemclicked('OPN4');" type="radio"></td>
+	</tr>
+	<tr style="background-color:#E0E0BC"><td>I start conversations.</td>
+	<td align="center"><input name="EXT5_E" id="EXT5_E" value="0" type="hidden"><input name="EXT5" value="1" onclick="itemclicked('EXT5');" type="radio"></td>
+	<td align="center"><input name="EXT5" value="2" onclick="itemclicked('EXT5');" type="radio"></td>
+	<td align="center"><input name="EXT5" value="3" onclick="itemclicked('EXT5');" type="radio"></td>
+	<td align="center"><input name="EXT5" value="4" onclick="itemclicked('EXT5');" type="radio"></td>
+	<td align="center"><input name="EXT5" value="5" onclick="itemclicked('EXT5');" type="radio"></td>
+	</tr>
+	<tr><td>I am not interested in other people's problems.</td>
+	<td align="center"><input name="AGR5_E" id="AGR5_E" value="0" type="hidden"><input name="AGR5" value="1" onclick="itemclicked('AGR5');" type="radio"></td>
+	<td align="center"><input name="AGR5" value="2" onclick="itemclicked('AGR5');" type="radio"></td>
+	<td align="center"><input name="AGR5" value="3" onclick="itemclicked('AGR5');" type="radio"></td>
+	<td align="center"><input name="AGR5" value="4" onclick="itemclicked('AGR5');" type="radio"></td>
+	<td align="center"><input name="AGR5" value="5" onclick="itemclicked('AGR5');" type="radio"></td>
+	</tr>
+	<tr style="background-color:#E0E0BC"><td>I get chores done right away.</td>
+	<td align="center"><input name="CSN5_E" id="CSN5_E" value="0" type="hidden"><input name="CSN5" value="1" onclick="itemclicked('CSN5');" type="radio"></td>
+	<td align="center"><input name="CSN5" value="2" onclick="itemclicked('CSN5');" type="radio"></td>
+	<td align="center"><input name="CSN5" value="3" onclick="itemclicked('CSN5');" type="radio"></td>
+	<td align="center"><input name="CSN5" value="4" onclick="itemclicked('CSN5');" type="radio"></td>
+	<td align="center"><input name="CSN5" value="5" onclick="itemclicked('CSN5');" type="radio"></td>
+	</tr>
+	<tr><td>I am easily disturbed.</td>
+	<td align="center"><input name="EST5_E" id="EST5_E" value="0" type="hidden"><input name="EST5" value="1" onclick="itemclicked('EST5');" type="radio"></td>
+	<td align="center"><input name="EST5" value="2" onclick="itemclicked('EST5');" type="radio"></td>
+	<td align="center"><input name="EST5" value="3" onclick="itemclicked('EST5');" type="radio"></td>
+	<td align="center"><input name="EST5" value="4" onclick="itemclicked('EST5');" type="radio"></td>
+	<td align="center"><input name="EST5" value="5" onclick="itemclicked('EST5');" type="radio"></td>
+	</tr>
+	<tr style="background-color:#E0E0BC"><td>I have excellent ideas.</td>
+	<td align="center"><input name="OPN5_E" id="OPN5_E" value="0" type="hidden"><input name="OPN5" value="1" onclick="itemclicked('OPN5');" type="radio"></td>
+	<td align="center"><input name="OPN5" value="2" onclick="itemclicked('OPN5');" type="radio"></td>
+	<td align="center"><input name="OPN5" value="3" onclick="itemclicked('OPN5');" type="radio"></td>
+	<td align="center"><input name="OPN5" value="4" onclick="itemclicked('OPN5');" type="radio"></td>
+	<td align="center"><input name="OPN5" value="5" onclick="itemclicked('OPN5');" type="radio"></td>
+	</tr>
+	<tr><td>I have little to say.</td>
+	<td align="center"><input name="EXT6_E" id="EXT6_E" value="0" type="hidden"><input name="EXT6" value="1" onclick="itemclicked('EXT6');" type="radio"></td>
+	<td align="center"><input name="EXT6" value="2" onclick="itemclicked('EXT6');" type="radio"></td>
+	<td align="center"><input name="EXT6" value="3" onclick="itemclicked('EXT6');" type="radio"></td>
+	<td align="center"><input name="EXT6" value="4" onclick="itemclicked('EXT6');" type="radio"></td>
+	<td align="center"><input name="EXT6" value="5" onclick="itemclicked('EXT6');" type="radio"></td>
+	</tr>
+	<tr style="background-color:#E0E0BC"><td>I have a soft heart.</td>
+	<td align="center"><input name="AGR6_E" id="AGR6_E" value="0" type="hidden"><input name="AGR6" value="1" onclick="itemclicked('AGR6');" type="radio"></td>
+	<td align="center"><input name="AGR6" value="2" onclick="itemclicked('AGR6');" type="radio"></td>
+	<td align="center"><input name="AGR6" value="3" onclick="itemclicked('AGR6');" type="radio"></td>
+	<td align="center"><input name="AGR6" value="4" onclick="itemclicked('AGR6');" type="radio"></td>
+	<td align="center"><input name="AGR6" value="5" onclick="itemclicked('AGR6');" type="radio"></td>
+	</tr>
+	<tr><td><small>I often forget to put things back in their proper place.</small></td>
+	<td align="center"><input name="CSN6_E" id="CSN6_E" value="0" type="hidden"><input name="CSN6" value="1" onclick="itemclicked('CSN6');" type="radio"></td>
+	<td align="center"><input name="CSN6" value="2" onclick="itemclicked('CSN6');" type="radio"></td>
+	<td align="center"><input name="CSN6" value="3" onclick="itemclicked('CSN6');" type="radio"></td>
+	<td align="center"><input name="CSN6" value="4" onclick="itemclicked('CSN6');" type="radio"></td>
+	<td align="center"><input name="CSN6" value="5" onclick="itemclicked('CSN6');" type="radio"></td>
+	</tr>
+	<tr style="background-color:#E0E0BC"><td>I get upset easily.</td>
+	<td align="center"><input name="EST6_E" id="EST6_E" value="0" type="hidden"><input name="EST6" value="1" onclick="itemclicked('EST6');" type="radio"></td>
+	<td align="center"><input name="EST6" value="2" onclick="itemclicked('EST6');" type="radio"></td>
+	<td align="center"><input name="EST6" value="3" onclick="itemclicked('EST6');" type="radio"></td>
+	<td align="center"><input name="EST6" value="4" onclick="itemclicked('EST6');" type="radio"></td>
+	<td align="center"><input name="EST6" value="5" onclick="itemclicked('EST6');" type="radio"></td>
+	</tr>
+	<tr><td>I do not have a good imagination.</td>
+	<td align="center"><input name="OPN6_E" id="OPN6_E" value="0" type="hidden"><input name="OPN6" value="1" onclick="itemclicked('OPN6');" type="radio"></td>
+	<td align="center"><input name="OPN6" value="2" onclick="itemclicked('OPN6');" type="radio"></td>
+	<td align="center"><input name="OPN6" value="3" onclick="itemclicked('OPN6');" type="radio"></td>
+	<td align="center"><input name="OPN6" value="4" onclick="itemclicked('OPN6');" type="radio"></td>
+	<td align="center"><input name="OPN6" value="5" onclick="itemclicked('OPN6');" type="radio"></td>
+	</tr>
+	<tr style="background-color:#E0E0BC"><td>I talk to a lot of different people at parties.</td>
+	<td align="center"><input name="EXT7_E" id="EXT7_E" value="0" type="hidden"><input name="EXT7" value="1" onclick="itemclicked('EXT7');" type="radio"></td>
+	<td align="center"><input name="EXT7" value="2" onclick="itemclicked('EXT7');" type="radio"></td>
+	<td align="center"><input name="EXT7" value="3" onclick="itemclicked('EXT7');" type="radio"></td>
+	<td align="center"><input name="EXT7" value="4" onclick="itemclicked('EXT7');" type="radio"></td>
+	<td align="center"><input name="EXT7" value="5" onclick="itemclicked('EXT7');" type="radio"></td>
+	</tr>
+	<tr><td>I am not really interested in others.</td>
+	<td align="center"><input name="AGR7_E" id="AGR7_E" value="0" type="hidden"><input name="AGR7" value="1" onclick="itemclicked('AGR7');" type="radio"></td>
+	<td align="center"><input name="AGR7" value="2" onclick="itemclicked('AGR7');" type="radio"></td>
+	<td align="center"><input name="AGR7" value="3" onclick="itemclicked('AGR7');" type="radio"></td>
+	<td align="center"><input name="AGR7" value="4" onclick="itemclicked('AGR7');" type="radio"></td>
+	<td align="center"><input name="AGR7" value="5" onclick="itemclicked('AGR7');" type="radio"></td>
+	</tr>
+	<tr style="background-color:#E0E0BC"><td>I like order.</td>
+	<td align="center"><input name="CSN7_E" id="CSN7_E" value="0" type="hidden"><input name="CSN7" value="1" onclick="itemclicked('CSN7');" type="radio"></td>
+	<td align="center"><input name="CSN7" value="2" onclick="itemclicked('CSN7');" type="radio"></td>
+	<td align="center"><input name="CSN7" value="3" onclick="itemclicked('CSN7');" type="radio"></td>
+	<td align="center"><input name="CSN7" value="4" onclick="itemclicked('CSN7');" type="radio"></td>
+	<td align="center"><input name="CSN7" value="5" onclick="itemclicked('CSN7');" type="radio"></td>
+	</tr>
+	<tr><td>I change my mood a lot.</td>
+	<td align="center"><input name="EST7_E" id="EST7_E" value="0" type="hidden"><input name="EST7" value="1" onclick="itemclicked('EST7');" type="radio"></td>
+	<td align="center"><input name="EST7" value="2" onclick="itemclicked('EST7');" type="radio"></td>
+	<td align="center"><input name="EST7" value="3" onclick="itemclicked('EST7');" type="radio"></td>
+	<td align="center"><input name="EST7" value="4" onclick="itemclicked('EST7');" type="radio"></td>
+	<td align="center"><input name="EST7" value="5" onclick="itemclicked('EST7');" type="radio"></td>
+	</tr>
+	<tr style="background-color:#E0E0BC"><td>I am quick to understand things.</td>
+	<td align="center"><input name="OPN7_E" id="OPN7_E" value="0" type="hidden"><input name="OPN7" value="1" onclick="itemclicked('OPN7');" type="radio"></td>
+	<td align="center"><input name="OPN7" value="2" onclick="itemclicked('OPN7');" type="radio"></td>
+	<td align="center"><input name="OPN7" value="3" onclick="itemclicked('OPN7');" type="radio"></td>
+	<td align="center"><input name="OPN7" value="4" onclick="itemclicked('OPN7');" type="radio"></td>
+	<td align="center"><input name="OPN7" value="5" onclick="itemclicked('OPN7');" type="radio"></td>
+	</tr>
+	<tr><td>I don't like to draw attention to myself.</td>
+	<td align="center"><input name="EXT8_E" id="EXT8_E" value="0" type="hidden"><input name="EXT8" value="1" onclick="itemclicked('EXT8');" type="radio"></td>
+	<td align="center"><input name="EXT8" value="2" onclick="itemclicked('EXT8');" type="radio"></td>
+	<td align="center"><input name="EXT8" value="3" onclick="itemclicked('EXT8');" type="radio"></td>
+	<td align="center"><input name="EXT8" value="4" onclick="itemclicked('EXT8');" type="radio"></td>
+	<td align="center"><input name="EXT8" value="5" onclick="itemclicked('EXT8');" type="radio"></td>
+	</tr>
+	<tr style="background-color:#E0E0BC"><td>I take time out for others.</td>
+	<td align="center"><input name="AGR8_E" id="AGR8_E" value="0" type="hidden"><input name="AGR8" value="1" onclick="itemclicked('AGR8');" type="radio"></td>
+	<td align="center"><input name="AGR8" value="2" onclick="itemclicked('AGR8');" type="radio"></td>
+	<td align="center"><input name="AGR8" value="3" onclick="itemclicked('AGR8');" type="radio"></td>
+	<td align="center"><input name="AGR8" value="4" onclick="itemclicked('AGR8');" type="radio"></td>
+	<td align="center"><input name="AGR8" value="5" onclick="itemclicked('AGR8');" type="radio"></td>
+	</tr>
+	<tr><td>I shirk my duties.</td>
+	<td align="center"><input name="CSN8_E" id="CSN8_E" value="0" type="hidden"><input name="CSN8" value="1" onclick="itemclicked('CSN8');" type="radio"></td>
+	<td align="center"><input name="CSN8" value="2" onclick="itemclicked('CSN8');" type="radio"></td>
+	<td align="center"><input name="CSN8" value="3" onclick="itemclicked('CSN8');" type="radio"></td>
+	<td align="center"><input name="CSN8" value="4" onclick="itemclicked('CSN8');" type="radio"></td>
+	<td align="center"><input name="CSN8" value="5" onclick="itemclicked('CSN8');" type="radio"></td>
+	</tr>
+	<tr style="background-color:#E0E0BC"><td>I have frequent mood swings.</td>
+	<td align="center"><input name="EST8_E" id="EST8_E" value="0" type="hidden"><input name="EST8" value="1" onclick="itemclicked('EST8');" type="radio"></td>
+	<td align="center"><input name="EST8" value="2" onclick="itemclicked('EST8');" type="radio"></td>
+	<td align="center"><input name="EST8" value="3" onclick="itemclicked('EST8');" type="radio"></td>
+	<td align="center"><input name="EST8" value="4" onclick="itemclicked('EST8');" type="radio"></td>
+	<td align="center"><input name="EST8" value="5" onclick="itemclicked('EST8');" type="radio"></td>
+	</tr>
+	<tr><td>I use difficult words.</td>
+	<td align="center"><input name="OPN8_E" id="OPN8_E" value="0" type="hidden"><input name="OPN8" value="1" onclick="itemclicked('OPN8');" type="radio"></td>
+	<td align="center"><input name="OPN8" value="2" onclick="itemclicked('OPN8');" type="radio"></td>
+	<td align="center"><input name="OPN8" value="3" onclick="itemclicked('OPN8');" type="radio"></td>
+	<td align="center"><input name="OPN8" value="4" onclick="itemclicked('OPN8');" type="radio"></td>
+	<td align="center"><input name="OPN8" value="5" onclick="itemclicked('OPN8');" type="radio"></td>
+	</tr>
+	<tr style="background-color:#E0E0BC"><td>I don't mind being the center of attention.</td>
+	<td align="center"><input name="EXT9_E" id="EXT9_E" value="0" type="hidden"><input name="EXT9" value="1" onclick="itemclicked('EXT9');" type="radio"></td>
+	<td align="center"><input name="EXT9" value="2" onclick="itemclicked('EXT9');" type="radio"></td>
+	<td align="center"><input name="EXT9" value="3" onclick="itemclicked('EXT9');" type="radio"></td>
+	<td align="center"><input name="EXT9" value="4" onclick="itemclicked('EXT9');" type="radio"></td>
+	<td align="center"><input name="EXT9" value="5" onclick="itemclicked('EXT9');" type="radio"></td>
+	</tr>
+	<tr><td>I feel others' emotions.</td>
+	<td align="center"><input name="AGR9_E" id="AGR9_E" value="0" type="hidden"><input name="AGR9" value="1" onclick="itemclicked('AGR9');" type="radio"></td>
+	<td align="center"><input name="AGR9" value="2" onclick="itemclicked('AGR9');" type="radio"></td>
+	<td align="center"><input name="AGR9" value="3" onclick="itemclicked('AGR9');" type="radio"></td>
+	<td align="center"><input name="AGR9" value="4" onclick="itemclicked('AGR9');" type="radio"></td>
+	<td align="center"><input name="AGR9" value="5" onclick="itemclicked('AGR9');" type="radio"></td>
+	</tr>
+	<tr style="background-color:#E0E0BC"><td>I follow a schedule.</td>
+	<td align="center"><input name="CSN9_E" id="CSN9_E" value="0" type="hidden"><input name="CSN9" value="1" onclick="itemclicked('CSN9');" type="radio"></td>
+	<td align="center"><input name="CSN9" value="2" onclick="itemclicked('CSN9');" type="radio"></td>
+	<td align="center"><input name="CSN9" value="3" onclick="itemclicked('CSN9');" type="radio"></td>
+	<td align="center"><input name="CSN9" value="4" onclick="itemclicked('CSN9');" type="radio"></td>
+	<td align="center"><input name="CSN9" value="5" onclick="itemclicked('CSN9');" type="radio"></td>
+	</tr>
+	<tr><td>I get irritated easily.</td>
+	<td align="center"><input name="EST9_E" id="EST9_E" value="0" type="hidden"><input name="EST9" value="1" onclick="itemclicked('EST9');" type="radio"></td>
+	<td align="center"><input name="EST9" value="2" onclick="itemclicked('EST9');" type="radio"></td>
+	<td align="center"><input name="EST9" value="3" onclick="itemclicked('EST9');" type="radio"></td>
+	<td align="center"><input name="EST9" value="4" onclick="itemclicked('EST9');" type="radio"></td>
+	<td align="center"><input name="EST9" value="5" onclick="itemclicked('EST9');" type="radio"></td>
+	</tr>
+	<tr style="background-color:#E0E0BC"><td>I spend time reflecting on things.</td>
+	<td align="center"><input name="OPN9_E" id="OPN9_E" value="0" type="hidden"><input name="OPN9" value="1" onclick="itemclicked('OPN9');" type="radio"></td>
+	<td align="center"><input name="OPN9" value="2" onclick="itemclicked('OPN9');" type="radio"></td>
+	<td align="center"><input name="OPN9" value="3" onclick="itemclicked('OPN9');" type="radio"></td>
+	<td align="center"><input name="OPN9" value="4" onclick="itemclicked('OPN9');" type="radio"></td>
+	<td align="center"><input name="OPN9" value="5" onclick="itemclicked('OPN9');" type="radio"></td>
+	</tr>
+	<tr><td>I am quiet around strangers.</td>
+	<td align="center"><input name="EXT10_E" id="EXT10_E" value="0" type="hidden"><input name="EXT10" value="1" onclick="itemclicked('EXT10');" type="radio"></td>
+	<td align="center"><input name="EXT10" value="2" onclick="itemclicked('EXT10');" type="radio"></td>
+	<td align="center"><input name="EXT10" value="3" onclick="itemclicked('EXT10');" type="radio"></td>
+	<td align="center"><input name="EXT10" value="4" onclick="itemclicked('EXT10');" type="radio"></td>
+	<td align="center"><input name="EXT10" value="5" onclick="itemclicked('EXT10');" type="radio"></td>
+	</tr>
+	<tr style="background-color:#E0E0BC"><td>I make people feel at ease.</td>
+	<td align="center"><input name="AGR10_E" id="AGR10_E" value="0" type="hidden"><input name="AGR10" value="1" onclick="itemclicked('AGR10');" type="radio"></td>
+	<td align="center"><input name="AGR10" value="2" onclick="itemclicked('AGR10');" type="radio"></td>
+	<td align="center"><input name="AGR10" value="3" onclick="itemclicked('AGR10');" type="radio"></td>
+	<td align="center"><input name="AGR10" value="4" onclick="itemclicked('AGR10');" type="radio"></td>
+	<td align="center"><input name="AGR10" value="5" onclick="itemclicked('AGR10');" type="radio"></td>
+	</tr>
+	<tr><td>I am exacting in my work.</td>
+	<td align="center"><input name="CSN10_E" id="CSN10_E" value="0" type="hidden"><input name="CSN10" value="1" onclick="itemclicked('CSN10');" type="radio"></td>
+	<td align="center"><input name="CSN10" value="2" onclick="itemclicked('CSN10');" type="radio"></td>
+	<td align="center"><input name="CSN10" value="3" onclick="itemclicked('CSN10');" type="radio"></td>
+	<td align="center"><input name="CSN10" value="4" onclick="itemclicked('CSN10');" type="radio"></td>
+	<td align="center"><input name="CSN10" value="5" onclick="itemclicked('CSN10');" type="radio"></td>
+	</tr>
+	<tr style="background-color:#E0E0BC"><td>I often feel blue.</td>
+	<td align="center"><input name="EST10_E" id="EST10_E" value="0" type="hidden"><input name="EST10" value="1" onclick="itemclicked('EST10');" type="radio"></td>
+	<td align="center"><input name="EST10" value="2" onclick="itemclicked('EST10');" type="radio"></td>
+	<td align="center"><input name="EST10" value="3" onclick="itemclicked('EST10');" type="radio"></td>
+	<td align="center"><input name="EST10" value="4" onclick="itemclicked('EST10');" type="radio"></td>
+	<td align="center"><input name="EST10" value="5" onclick="itemclicked('EST10');" type="radio"></td>
+	</tr>
+	<tr><td>I am full of ideas.</td>
+	<td align="center"><input name="OPN10_E" id="OPN10_E" value="0" type="hidden"><input name="OPN10" value="1" onclick="itemclicked('OPN10');" type="radio"></td>
+	<td align="center"><input name="OPN10" value="2" onclick="itemclicked('OPN10');" type="radio"></td>
+	<td align="center"><input name="OPN10" value="3" onclick="itemclicked('OPN10');" type="radio"></td>
+	<td align="center"><input name="OPN10" value="4" onclick="itemclicked('OPN10');" type="radio"></td>
+	<td align="center"><input name="OPN10" value="5" onclick="itemclicked('OPN10');" type="radio"></td>
+	</tr>
+
+
+
+	<tr>
+	<td colspan="6" align="right">
+	<br>
+	<input style="font-size:135%;" value="Continue" onclick="return submitcheck();" type="submit">
+	<input name="onblurs" id="onblurs" value="5" type="hidden">
+
+	</td>
+	</tr>
+	</tbody></table>
+	
+</form>
+
+<br><br><br><br><br><br>
+
+
+</body>
+</html>
